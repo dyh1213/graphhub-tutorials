@@ -11,7 +11,7 @@ For more insights into the development of GraphHub, including the motivations be
 
 ## Tutorial Overview
 
-### 1. Creating a blazor server app
+### 1. Creating a blazor WASM app
 #### Prerequisites 
 - Visual Studio 2022 (I use for mac)
 
