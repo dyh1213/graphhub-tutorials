@@ -2,7 +2,7 @@
 
 Welcome! GaphHub aims to create an open platform where knowledge graphs can be discovered, built, and collaborated on.
 
-This repository contains the code developed throughout the GraphHub technical tutorial. If you're curious about the creation process, you can check out the tutorial video [here](https://youtu.be/JJBO2r0F1Ug).
+This repository contains the code developed throughout the [GraphHub technical tutorial 1](https://youtu.be/JJBO2r0F1Ug).
 
 For more insights into the development of GraphHub, including the motivations behind it, the development process, and future plans, consider following my vlog, PM DevLog. Below you'll find some noteworthy episodes:
 
