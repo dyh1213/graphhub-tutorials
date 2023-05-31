@@ -1,4 +1,4 @@
-# GaphHub Tutorial 1
+# GraphHub Tutorial 1
 
 Welcome! GaphHub aims to create an open platform where knowledge graphs can be discovered, built, and collaborated on.
 
