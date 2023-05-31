@@ -1,0 +1,7 @@
+echo ".env" >> .gitignore
+bin/
+bin*/
+obj/
+bin
+bin*
+obj

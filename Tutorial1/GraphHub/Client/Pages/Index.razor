@@ -1,0 +1,92 @@
+﻿@using System.Net.Http;
+@using System.Text;
+@using System.Text.Json;
+@using System.Threading.Tasks;
+@inject HttpClient Http
+
+@page "/"
+
+<MudContainer MaxWidth="MaxWidth.False" Style="background: linear-gradient(-45deg, #594ae2ff, #ff4081ff);">
+    <MudContainer MaxWidth="MaxWidth.Large" Class="pa-15">
+        <MudText Align="Align.Center" Typo="Typo.h2" Class="text-white">GraphHub is the largest (and only?) collection of community built open-source knowledge graphs.</MudText>
+    </MudContainer>
+    <MudContainer MaxWidth="MaxWidth.Small" Style="padding-bottom: 60px;">
+        <MudStack VerticalAlign="VerticalAlign.Center">
+            <MudText Align="Align.Center" Typo="Typo.caption" Class="text-white">Register to join our closed beta test!</MudText>
+            <MudTextField Class="white-text" @bind-Value="email" Label="Email" Variant="Variant.Filled" Margin="Margin.Dense"
+                          Validation="@((string s) => !string.IsNullOrWhiteSpace(s) && s.Contains('@') ? "" : "Invalid email")"></MudTextField>
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" Style="color: white;" Disabled="@(string.IsNullOrWhiteSpace(email) || !email.Contains('@'))" OnClick="async () => await AddNewEmail()">Submit</MudButton>
+        </MudStack>
+    </MudContainer>
+</MudContainer>
+
+<MudContainer MaxWidth="MaxWidth.False" Style="background: linear-gradient(to right, #434343 0%, black 100%); ">
+    <MudContainer MaxWidth="MaxWidth.Large" Class="pa-15">
+        <MudGrid>
+            <MudItem xs="12">
+                <MudText Align="Align.Center" Typo="Typo.h4" Style="color: white;">Orgenize Knowledge Into Concepts & Lists</MudText>
+                <MudDivider Class="my-2" />
+            </MudItem>
+            <MudItem xs="4">
+                <MudText Typo="Typo.h4" Style="font-weight: 500; color: white; text-align: center; padding-bottom: 20px;">Discover</MudText>
+                <MudText Typo="Typo.h6" Style="font-weight: 400; color: white; text-align: center;">Find knowledge graphs that are free and open source for you to learn, export or integrate with any tool.</MudText>
+            </MudItem>
+            <MudItem xs="4">
+                <MudText Typo="Typo.h4" Style="font-weight: 500; color: white; text-align: center; padding-bottom: 20px;">Contribute</MudText>
+                <MudText Typo="Typo.h6" Style="font-weight: 400; color: white; text-align: center;">Add you own knowledge to an existing graph by submitting changes, just like on GitHub.</MudText>
+            </MudItem>
+            <MudItem xs="4">
+                <MudText Typo="Typo.h4" Style="font-weight: 500; color: white; text-align: center; padding-bottom: 20px;">Create</MudText>
+                <MudText Typo="Typo.h6" Style="font-weight: 400; color: white; text-align: center;">Cant find what you need? Simply create your own knowledge graph and expand the community.</MudText>
+            </MudItem>
+            <MudItem xs="12">
+                <MudContainer MaxWidth="MaxWidth.Small">
+                    <MudButton Disabled="true" Style="margin-top:30px" FullWidth="true" Variant="Variant.Outlined" Color="Color.Secondary">Create Your First Graph (coming soon)</MudButton>
+                </MudContainer>
+            </MudItem>
+        </MudGrid>
+    </MudContainer>
+</MudContainer>
+
+<MudContainer MaxWidth="MaxWidth.False" Style="background: #ff4081ff;">
+    <MudContainer MaxWidth="MaxWidth.Large" Class="pa-15">
+        <MudText Typo="Typo.h5" Style="color:white; font-weight:500;">Featured Knowledge Graphs</MudText>
+        <MudDivider Class="my-4" />
+        <MudGrid>
+            @for (int i = 0; i < 6; i++)
+            {
+                <MudItem xs="4">
+                    <MudPaper Class="pa-5" Style="margin-bottom:25px">
+                        <MudText Typo="Typo.h6">
+                            Midjourney
+                        </MudText>
+                        <MudText Typo="Typo.body1" Style="margin-bottom: 10px">
+                            The graph for Midjourney is the perfect place to learn and collaborate on the most cutting edge generative AI.
+                        </MudText>
+                        <MudButton Color="Color.Dark" Variant="Variant.Filled">Visit</MudButton>
+                    </MudPaper>
+                </MudItem>
+            }
+        </MudGrid>
+        <MudContainer MaxWidth="MaxWidth.Small">
+            <MudButton Disabled="true" Style="margin-top:20px" FullWidth="true" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.Send" Color="Color.Primary" Size="Size.Large" Href="/register">View All</MudButton>
+        </MudContainer>
+    </MudContainer>
+</MudContainer>
+
+@code{
+    public string? email = null;
+
+    public async Task<bool> AddNewEmail()
+    {
+        var response = await Http.GetAsync($"/mailchimp/addnewemail/{email}");
+
+        response.EnsureSuccessStatusCode();
+
+        var responseContent = await response.Content.ReadAsStringAsync();
+
+        var result = JsonSerializer.Deserialize<bool>(responseContent);
+
+        return result;
+    }
+}
