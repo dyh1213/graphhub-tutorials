@@ -1,0 +1,26 @@
+﻿@inherits GraphHub.Pages.Concept.CardComponentBase
+
+<MudPaper Class="@containerCSS" @onclick="@OnClick">
+    <MudStack>
+        <MudStack Row="true" Justify="Justify.SpaceBetween" AlignItems="AlignItems.Center">
+            <MudText Typo="Typo.h6" Style="@colorStyle">@Title</MudText>
+            <MudButton Disabled="true" Typo="Typo.body2">@("Add " + ItemType.ToString())</MudButton>
+        </MudStack>
+        <MudStack Row="true" AlignItems="AlignItems.End">
+            <MudText Typo="Typo.h4" Style="@colorStyle">@ItemCount</MudText>
+            <MudText Typo="Typo.h6" Style="@colorStyle">@ItemCountDisplayString()</MudText>
+        </MudStack>
+    </MudStack>
+</MudPaper>
+
+<style>
+    .hover-lighten:hover {
+        /* Replace #color with the color you want when hovered. */
+        background-color: #2c2c34;
+        cursor: pointer;
+    }
+
+    .purple-bottom-border {
+        border-bottom: 2px solid var(--mud-palette-primary);
+    }
+</style>

@@ -1,0 +1,101 @@
+﻿schema {
+  query: DataQueryResolver
+}
+
+type DataQueryResolver {
+  concept(graphName: String! conceptId: String!): ConceptPageDTO!
+  list(graphName: String! listId: String!): ListPageDTO!
+  allListMembers(graphName: String! listId: String! skip: Int! = 0 take: Int! = 2147483647): [ListConceptDTO!]!
+  relatedConcepts(graphName: String!): [MinimalList!]!
+  database(conceptName: String!): GraphData!
+}
+
+type ConceptPageDTO {
+  id: String
+  title: String
+  description: String
+  markdown: String
+  ownerOfLists: [ChildListDTO!]
+  memberOfLists: [ListDTO!]
+}
+
+type ListPageDTO {
+  id: String
+  pluralTitle: String
+  description: String
+  parentConceptName: String
+  parentConceptId: String
+  numberOfMembersIncludingInheritence: Int
+  listConcepts: [ListConceptDTO!]
+  pullFromLists: [ListDTO!]
+  pushToLists: [ListDTO!]
+}
+
+type ListConceptDTO {
+  id: String
+  title: String
+  description: String
+  inheritedFromListId: String
+  inheritedFromListName: String
+}
+
+type MinimalList {
+  id: String
+  title: String
+  concepts: [MinimalConcept!]
+}
+
+type GraphData {
+  concepts: [ConceptData!]!
+  lists: [ConceptListData!]!
+  memberships: [MembershipData!]!
+  conceptMarkdown: [ConceptMarkdown!]!
+}
+
+type MembershipData {
+  conceptId: String
+  listId: String
+}
+
+type ConceptListData {
+  id: String
+  title: String
+  pluralTitle: String
+  description: String
+  parentConceptId: String
+  pullFromListsIds: [String!]
+  disableDirectMembers: Boolean!
+}
+
+type ConceptData {
+  id: String
+  title: String
+  pluralTitle: String
+  description: String
+}
+
+type MinimalConcept {
+  id: String
+  title: String
+}
+
+type ListDTO {
+  id: String
+  pluralTitle: String
+  description: String
+  parentConceptName: String
+  parentConceptId: String
+  numberOfMembersIncludingInheritence: Int
+}
+
+type ChildListDTO {
+  id: String
+  pluralTitle: String
+  description: String
+  numberOfMembersIncludingInheritence: Int
+}
+
+type ConceptMarkdown {
+  conceptId: String
+  markdown: String
+}

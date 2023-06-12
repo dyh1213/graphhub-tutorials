@@ -1,0 +1,208 @@
+﻿@using System.Net.Http;
+@using System.Text;
+@using System.Text.Json;
+@using System.Threading.Tasks;
+@inject HttpClient Http
+
+@page "/"
+
+<MudContainer MaxWidth="MaxWidth.False" Style="background: linear-gradient(-45deg, #594ae2ff, #ff4081ff);">
+    <MudContainer MaxWidth="MaxWidth.Large" Class="pa-6 pa-sm-15">
+        <MudText Align="Align.Center" Typo="Typo.h2" Class="text-white mobile-title">GraphHub is the largest (and only?) collection of community built open-source knowledge graphs.</MudText>
+    </MudContainer>
+    <MudContainer MaxWidth="MaxWidth.Small" Style="padding-bottom: 60px;">
+        <MudStack VerticalAlign="VerticalAlign.Center">
+            @if (!registered)
+            {
+                <MudText Align="Align.Center" Typo="Typo.caption" Class="text-white">Register to join our closed beta test!</MudText>
+                <MudTextField Class="white-text"
+                              @bind-Value="email"
+                              Label="Email"
+                              Variant="Variant.Filled"
+                              Margin="Margin.Dense"
+                              InputType="InputType.Email"
+                              Validation="@((string s) => !string.IsNullOrWhiteSpace(s) && s.Contains('@') ? "" : "Invalid email")"
+                              Immediate="true"></MudTextField>
+                <MudButton Variant="Variant.Filled" Color="Color.Primary" Style="color: white;" Disabled="@(string.IsNullOrWhiteSpace(email) || !email.Contains('@'))" OnClick="async () => await AddNewEmail()">Submit</MudButton>
+            }
+            else
+            {
+                <MudText Align="Align.Center" Typo="Typo.caption" Class="text-white">Thank you for showing your interest!</MudText>
+            }
+        </MudStack>
+    </MudContainer>
+</MudContainer>
+
+<MudContainer MaxWidth="MaxWidth.False" Style="background: linear-gradient(to right, #434343 0%, black 100%); ">
+    <MudContainer MaxWidth="MaxWidth.Large" Class="pa-6 pa-sm-15">
+        <MudGrid>
+            <MudItem xs="12">
+                <MudText Align="Align.Center" Typo="Typo.h4" Class="mobile-title" Style="color: white;">Orgenize Knowledge Into Concepts & Lists</MudText>
+                <MudDivider Class="my-2" />
+            </MudItem>
+            <MudItem xs="12" sm="4">
+                <MudText Typo="Typo.h4" Class="mobile-title" Style="font-weight: 500; color: white; text-align: center; padding-bottom: 20px;">Discover</MudText>
+                <MudText Typo="Typo.h6" Class="mobile-text" Style="font-weight: 400; color: white; text-align: center;">Find knowledge graphs that are free and open source for you to learn, export or integrate with any tool.</MudText>
+            </MudItem>
+            <MudItem xs="12" sm="4">
+                <MudText Typo="Typo.h4" Class="mobile-title" Style="font-weight: 500; color: white; text-align: center; padding-bottom: 20px;">Contribute</MudText>
+                <MudText Typo="Typo.h6" Class="mobile-text" Style="font-weight: 400; color: white; text-align: center;">Add you own knowledge to an existing graph by submitting changes, just like on GitHub.</MudText>
+            </MudItem>
+            <MudItem xs="12" sm="4">
+                <MudText Typo="Typo.h4" Class="mobile-title" Style="font-weight: 500; color: white; text-align: center; padding-bottom: 20px;">Create</MudText>
+                <MudText Typo="Typo.h6" Class="mobile-text" Style="font-weight: 400; color: white; text-align: center;">Cant find what you need? Simply create your own knowledge graph and expand the community.</MudText>
+            </MudItem>
+            <MudItem xs="12">
+                <MudContainer MaxWidth="MaxWidth.Small">
+                    <MudButton Disabled="true" Style="margin-top:30px" FullWidth="true" Variant="Variant.Outlined" Color="Color.Secondary">Create Your First Graph (coming soon)</MudButton>
+                </MudContainer>
+            </MudItem>
+        </MudGrid>
+    </MudContainer>
+</MudContainer>
+
+<MudContainer MaxWidth="MaxWidth.False" Style="background: #ff4081ff;">
+    <MudContainer MaxWidth="MaxWidth.Large" Class="pa-15">
+        <MudText Typo="Typo.h5" Style="color:white; font-weight:500;">Featured Knowledge Graphs</MudText>
+        <MudDivider Class="my-4" />
+        <MudGrid>
+            <MudItem xs="12" sm="4">
+                <MudPaper Class="pa-5" Style="margin-bottom:25px">
+                    <MudText Typo="Typo.h6" Style="color: white; font-weight: 500;">
+                        Tesla Inc.
+                    </MudText>
+                    <MudText Typo="Typo.body1" Style="margin-bottom: 10px">
+                        Stay at the forefront of innovation with our ever-evolving knowledge graph, keeping you informed about the latest AI companies and groundbreaking technologies shaping our future.
+                    </MudText>
+                    <MudButton Color="Color.Dark" Variant="Variant.Filled" Href="tesla/concept/1c1b4890-7e8a-4f1f-a7e3-5b71e8e303d0">Visit</MudButton>
+                </MudPaper>
+            </MudItem>
+            <MudItem xs="12" sm="4">
+                <MudPaper Class="pa-5" Style="margin-bottom: 25px;">
+                    <MudText Typo="Typo.h6" Style="color: white; font-weight: 500;">
+                        Midjourney
+                    </MudText>
+                    <MudText Typo="Typo.body1" Style="margin-bottom: 10px">
+                        The graph for Midjourney is the perfect place to learn and collaborate on the most cutting edge generative AI. Find artists and styles that will take your prompts to the next level.
+                    </MudText>
+                    <MudButton Color="Color.Dark" Variant="Variant.Filled" Href="midjourney/concept/e1a8f365-024a-44e5-8844-998342022971">Visit</MudButton>
+                </MudPaper>
+            </MudItem>
+            <MudItem xs="12" sm="4">
+                <MudPaper Class="pa-5" Style="margin-bottom:25px">
+                    <MudText Typo="Typo.h6" Style="color: white; font-weight: 500;">
+                        Game of Thrones
+                    </MudText>
+                    <MudText Typo="Typo.body1" Style="margin-bottom: 10px">
+                        Embark on a captivating journey through the intricate world of Game of Thrones, exploring the detailed map of characters, houses, locations and major events.
+                    </MudText>
+                    <MudButton Color="Color.Dark" Variant="Variant.Filled" Disabled="true">Coming Soon</MudButton>
+                </MudPaper>
+            </MudItem>
+            <MudItem xs="12" sm="4">
+                <MudPaper Class="pa-5" Style="margin-bottom:25px">
+                    <MudText Typo="Typo.h6" Style="color: white; font-weight: 500;">
+                        Sustainable Energy
+                    </MudText>
+                    <MudText Typo="Typo.body1" Style="margin-bottom: 10px">
+                        Promoting innovation for a greener future with our comprehensive guide to sustainable energy, encompassing cutting-edge technologies and eco-friendly fuels.
+                    </MudText>
+                    <MudButton Color="Color.Dark" Variant="Variant.Filled" Disabled="true">Coming Soon</MudButton>
+                </MudPaper>
+            </MudItem>
+            <MudItem xs="12" sm="4">
+                <MudPaper Class="pa-5" Style="margin-bottom:25px">
+                    <MudText Typo="Typo.h6" Style="color: white; font-weight: 500;">
+                        GraphHub
+                    </MudText>
+                    <MudText Typo="Typo.body1" Style="margin-bottom: 10px">
+                        Discover the inner workings of GraphHub itself, as you delve into the actual knowledge graph powering our platform.
+                    </MudText>
+                    <MudButton Color="Color.Dark" Variant="Variant.Filled" Disabled="true">Coming Soon</MudButton>
+                </MudPaper>
+            </MudItem>
+
+            <MudItem xs="12" sm="4">
+                <MudPaper Class="pa-5" Style="margin-bottom:25px">
+                    <MudText Typo="Typo.h6" Style="color: white; font-weight: 500;">
+                        Cryptocurrencies
+                    </MudText>
+                    <MudText Typo="Typo.body1" Style="margin-bottom: 10px">
+                        Understand what companies are spearheading the crypto revolution and find all cryptocurrencies, uncovering their similarities and differences.
+                    </MudText>
+                    <MudButton Color="Color.Dark" Variant="Variant.Filled" Disabled="true">Coming Soon</MudButton>
+                </MudPaper>
+            </MudItem>
+
+        </MudGrid>
+        <MudContainer MaxWidth="MaxWidth.Small">
+            <MudButton Disabled="true" Style="margin-top:20px" FullWidth="true" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.Send" Color="Color.Primary" Size="Size.Large" Href="/register">View All</MudButton>
+        </MudContainer>
+    </MudContainer>
+</MudContainer>
+<MudContainer MaxWidth="MaxWidth.False" Style="background: white">
+    <MudContainer MaxWidth="MaxWidth.Large" Class="pa-15">
+        <MudGrid>
+            <MudItem xs="12">
+                <MudText Align="Align.Center" Typo="Typo.h4" Style="color: black;">Follow GraphHub's Development</MudText>
+                <MudDivider Class="my-2 black" Style="color:black;" />
+            </MudItem>
+            <MudItem xs="12" sm="4">
+                <MudPaper Class="pa-5" Style="margin-bottom:25px">
+                    <MudText Typo="Typo.h6" Style="color: white; font-weight: 500;">
+                        PM DevLog
+                    </MudText>
+                    <MudText Typo="Typo.body1" Style="margin-bottom: 10px">
+                        Follow my journey from a technical product perpective as I share my thoughts and direction.
+                    </MudText>
+                    <MudButton Color="Color.Dark" Variant="Variant.Filled" FullWidth="true" Href="https://www.youtube.com/watch?v=JJBO2r0F1Ug">Go To YouTube</MudButton>
+                </MudPaper>
+            </MudItem>
+            <MudItem xs="12" sm="4">
+                <MudPaper Class="pa-5" Style="margin-bottom:25px">
+                    <MudText Typo="Typo.h6" Style="color: white; font-weight: 500;">
+                        Technical Tutorials
+                    </MudText>
+                    <MudText Typo="Typo.body1" Style="margin-bottom: 10px">
+                        Short tutorials that share technical aspects of building the MVP using Blazor WASM and more.
+                    </MudText>
+                    <MudButton Color="Color.Dark" Variant="Variant.Filled" FullWidth="true" Href="https://www.youtube.com/watch?v=pNgIDoxWuck">Go To YouTube</MudButton>
+                </MudPaper>
+            </MudItem>
+            <MudItem xs="12" sm="4">
+                <MudPaper Class="pa-5" Style="margin-bottom:25px">
+                    <MudText Typo="Typo.h6" Style="color: white; font-weight: 500;">
+                        GitHub
+                    </MudText>
+                    <MudText Typo="Typo.body1" Style="margin-bottom: 10px">
+                        I am sharing the source code for every step of the project and much more.
+                    </MudText>
+                    <MudButton Color="Color.Dark" Variant="Variant.Filled" FullWidth="true" Href="https://github.com/dyh1213/graphhub-tutorials">Go To GitHub</MudButton>
+                </MudPaper>
+            </MudItem>
+            <MudItem xs="12">
+                <MudLink Align="Align.Center" Typo="Typo.h6" Style="color: black;" Href="https://www.linkedin.com/in/daniel-hai/">Have a question or suggestion? Contact me through LinkedIn at daniel-hai</MudLink>
+            </MudItem>
+        </MudGrid>
+    </MudContainer>
+</MudContainer>
+
+@code{
+    bool registered = false;
+    public string? email = null;
+
+    public async Task<bool> AddNewEmail()
+    {
+        var response = await Http.GetAsync($"/mailchimp/addnewemail/{email}");
+
+        response.EnsureSuccessStatusCode();
+
+        var responseContent = await response.Content.ReadAsStringAsync();
+
+        var result = JsonSerializer.Deserialize<bool>(responseContent);
+
+        registered = true;
+
+        return result;
+    }
+}

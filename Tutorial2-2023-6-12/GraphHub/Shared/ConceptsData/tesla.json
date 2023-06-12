@@ -1,0 +1,487 @@
+﻿{
+  "Concepts": [
+    {
+      "Id": "1c1b4890-7e8a-4f1f-a7e3-5b71e8e303d0",
+      "Title": "Tesla",
+      "PluralTitle": "Teslas",
+      "Description": "Tesla Inc. is an American electric vehicle and clean energy company. Founded in 2003 and based in Palo Alto, California, the company's mission is to accelerate the world's transition to sustainable energy. Through its production of electric vehicles and energy storage products, Tesla aims to reduce the world's reliance on fossil fuels and promote renewable energy sources."
+    },
+    {
+      "Id": "71740b3a-20b6-46ee-a179-cf76ac687c5e",
+      "Title": "Model S",
+      "PluralTitle": "Model S Cars",
+      "Description": "The Tesla Model S is an all-electric luxury sedan introduced by Tesla Inc. in 2012. With its long electric range and impressive acceleration, the Model S helped to establish Tesla as a leader in electric vehicle technology. It exemplifies the company's commitment to produce vehicles that do not compromise on performance or luxury while being entirely emissions-free."
+    },
+    {
+      "Id": "4f731b4d-4142-4df5-bdf1-531e4edf25fb",
+      "Title": "Model 3",
+      "PluralTitle": "Model 3 Cars",
+      "Description": "The Tesla Model 3 is a more affordable electric sedan launched by Tesla Inc. in 2017. The Model 3 has played a significant role in making electric vehicles accessible to a broader consumer base, supporting Tesla's mission to accelerate the transition to sustainable energy."
+    },
+    {
+      "Id": "6e7c8a11-251e-4c2b-b0ea-b25ee690ad8f",
+      "Title": "Model X",
+      "PluralTitle": "Model X Cars",
+      "Description": "The Tesla Model X is an all-electric SUV that combines the practicality of a sports utility vehicle with the high performance and efficiency of electric powertrain technology. Introduced by Tesla Inc. in 2015, the Model X expands the range of Tesla's vehicle offerings and further emphasizes the company's dedication to a broad portfolio of electric vehicles."
+    },
+    {
+      "Id": "60a4e24a-68c5-4326-ba3d-c5f3f4d2e0ce",
+      "Title": "Model Y",
+      "PluralTitle": "Model Y Cars",
+      "Description": "The Tesla Model Y is a compact all-electric SUV unveiled by Tesla Inc. in 2019. Designed for efficiency, versatility, and safety, the Model Y strengthens Tesla's commitment to producing a comprehensive range of electric vehicles to suit various customer needs."
+    },
+    {
+      "Id": "79163f7b-69f6-4d1f-84f2-c8aeb1a18e0a",
+      "Title": "Cybertruck",
+      "PluralTitle": "Cybertrucks",
+      "Description": "The Tesla Cybertruck is an all-electric pickup truck that represents Tesla's move into the utility vehicle sector. Announced in 2019, the Cybertruck is part of Tesla's broader strategy to extend the benefits of electric vehicle technology to a wider range of vehicle types and uses."
+    },
+    {
+      "Id": "c43d5c5a-2c63-4c7e-a116-ae2bdc823650",
+      "Title": "Roadster",
+      "PluralTitle": "Roadsters",
+      "Description": "The Tesla Roadster is an upcoming all-electric sports car that embodies Tesla's push towards performance extremes in electric vehicle technology. Expected for release in the near future, the Roadster promises to set new performance records, further showcasing Tesla's technological prowess."
+    },
+    {
+      "Id": "00e144d1-7782-476f-961d-32ed54766f3d",
+      "Title": "Autopilot",
+      "PluralTitle": "Autopilot Systems",
+      "Description": "Autopilot is Tesla's advanced driver-assistance system that enhances safety and convenience for drivers. As part of Tesla's broader pursuit of autonomous driving technology, Autopilot represents a significant step towards safer, more efficient road travel."
+    },
+    {
+      "Id": "3a61e28e-bbbd-45b9-96b3-972a6d367b8f",
+      "Title": "Full Self-Driving",
+      "PluralTitle": "Full Self-Driving Systems",
+      "Description": "Full Self-Driving (FSD) is a future feature upgrade promised by Tesla. By achieving full autonomous driving capabilities, FSD embodies Tesla's vision of a future where road travel is safer, more efficient, and more accessible."
+    },
+    {
+      "Id": "79b5e3c5-5e3d-48b3-939d-f772e6de39e7",
+      "Title": "Supercharger Network",
+      "PluralTitle": "Supercharger Networks",
+      "Description": "The Supercharger Network is a global network of electric vehicle charging stations developed by Tesla. This network addresses the challenge of 'range anxiety' often associated with electric vehicles and represents a key component of Tesla's strategy to make electric vehicles a practical option for long-distance travel."
+    },
+    {
+      "Id": "cdc286af-b4f9-4c4e-9824-0a9e11ef0b85",
+      "Title": "Gigafactory",
+      "PluralTitle": "Gigafactories",
+      "Description": "Gigafactories are Tesla's large-scale battery and vehicle production facilities. The Gigafactory concept is key to Tesla's manufacturing strategy, aiming to achieve economies of scale, reduce costs, and ensure the supply of key components for Tesla's products. Each Gigafactory contributes significantly to Tesla's overall production capacity and symbolizes the company's commitment to manufacturing efficiency and sustainability."
+    },
+    {
+      "Id": "26f1609c-6511-486a-8d29-4e14e8a3610a",
+      "Title": "Battery Technology",
+      "PluralTitle": "Battery Technologies",
+      "Description": "Battery Technology at Tesla involves the design, manufacture, and use of high-performance lithium-ion batteries. This technology is fundamental to Tesla's electric vehicles and energy storage products, ensuring superior range, charging times, and lifespan. Tesla's advances in battery technology continue to push the boundaries of what is possible for electric mobility and renewable energy storage."
+    },
+    {
+      "Id": "d6f7250e-8c53-4347-8a3d-2f51a4255b23",
+      "Title": "Solar Technology",
+      "PluralTitle": "Solar Technologies",
+      "Description": "Solar Technology refers to Tesla's work in harnessing solar energy through the development and sale of solar panels and solar roof tiles. These products represent Tesla's efforts to promote renewable energy and decrease reliance on traditional power grids. Solar Technology aligns with Tesla's mission of accelerating the world's transition to sustainable energy."
+    },
+    {
+      "Id": "8ed27ac6-26e9-4c07-b99a-3c57abce56e0",
+      "Title": "Energy Storage",
+      "PluralTitle": "Energy Storage Solutions",
+      "Description": "Tesla's Energy Storage solutions encompass products like Powerwall, Powerpack, and Megapack that store electricity for home and grid use. These energy storage products further Tesla's goal of increasing energy independence and improving the reliability of renewable energy by making it available on demand."
+    },
+    {
+      "Id": "01a02139-d110-4ad7-a2d7-ae1a535fde9b",
+      "Title": "AI and Machine Learning",
+      "PluralTitle": "AI and Machine Learning Technologies",
+      "Description": "AI and Machine Learning technologies play a crucial role in Tesla's self-driving technology and manufacturing processes. They empower Tesla's Autopilot to interpret and adapt to different driving scenarios, while optimizing assembly line efficiency, reducing production costs, and improving overall vehicle quality."
+    },
+    {
+      "Id": "0f496816-b091-4605-b05b-79c1cb9d7c4a",
+      "Title": "Tesla Car Features",
+      "PluralTitle": "Tesla Car Features",
+      "Description": "Tesla Car Features refer to the various technological, comfort, and safety features included in Tesla's vehicle lineup. These features, including electric motor powertrain, lithium-ion battery technology, and touchscreen displays, contribute to Tesla's reputation for innovative, high-quality electric vehicles."
+    },
+    {
+      "Id": "78f049da-ae3d-4c18-b57f-99e216b7eaf7",
+      "Title": "Electric Motor",
+      "PluralTitle": "Electric Motors",
+      "Description": "Tesla vehicles are powered by an electric motor, a key feature contributing to the exceptional acceleration, smooth ride, and high energy efficiency. This feature plays a critical role in Tesla's commitment to sustainable transportation, eliminating the need for gasoline and reducing greenhouse gas emissions."
+    },
+    {
+      "Id": "4be05f44-8cbe-405b-b1f5-0ef09a80d997",
+      "Title": "Lithium-Ion Battery",
+      "PluralTitle": "Lithium-Ion Batteries",
+      "Description": "Lithium-ion batteries in Tesla vehicles store the electric energy that powers the motor. These batteries are designed for long life, high energy density, and fast charging, supporting Tesla's mission to make electric vehicles practical and desirable alternatives to gasoline-powered vehicles."
+    },
+    {
+      "Id": "3b60e8f4-6f80-4b57-8a51-660d84c65e8f",
+      "Title": "Touchscreen Display",
+      "PluralTitle": "Touchscreen Displays",
+      "Description": "Tesla vehicles come equipped with a touchscreen display, serving as the control hub for various vehicle functions. This user interface is part of Tesla's commitment to combine performance and practicality with comfort and convenience."
+    },
+    {
+      "Id": "1ff2ff92-3e3b-42f6-8d36-76434c7a6b56",
+      "Title": "Extended Range",
+      "PluralTitle": "Extended Ranges",
+      "Description": "One of the Model S's key features is its extended range, offering an industry-leading electric driving range on a single charge. This feature underscores Tesla's effort to eliminate 'range anxiety' and make electric vehicles a practical choice for long-distance travel."
+    },
+    {
+      "Id": "b4dcd097-c86c-4ad2-b682-24357710a9c6",
+      "Title": "Premium Interior",
+      "PluralTitle": "Premium Interiors",
+      "Description": "The Model S boasts a premium interior, including high-quality materials and a minimalist design. This feature aligns with Tesla's goal to offer luxury vehicles that rival their traditional gasoline-powered counterparts."
+    },
+    {
+      "Id": "803b364e-4919-4fbb-8b26-c7ea366c2fd7",
+      "Title": "Advanced Air Filtration",
+      "PluralTitle": "Advanced Air Filtrations",
+      "Description": "Advanced Air Filtration provides improved air quality inside the vehicle. This innovative feature removes pollen, bacteria, viruses, and pollution from the air before they enter the cabin, ensuring a healthier and more comfortable driving environment."
+    },
+    {
+      "Id": "69fda6c9-bd38-418a-b9ff-4edbbd5da6f1",
+      "Title": "Standard Range Plus",
+      "PluralTitle": "Standard Ranges Plus",
+      "Description": "The Model 3's Standard Range Plus feature offers a balance of range, performance, and price, making electric vehicles more accessible to the average consumer. This feature supports Tesla's goal of accelerating the adoption of electric vehicles."
+    },
+    {
+      "Id": "f29beeb6-6ed3-4e09-8574-8b09c7b5f32a",
+      "Title": "Autopilot",
+      "PluralTitle": "Autopilots",
+      "Description": "Autopilot, included in the Model 3, is an advanced driver-assistance system enhancing safety and convenience. It's a testament to Tesla's commitment to incorporating advanced technology for better driving experiences."
+    },
+    {
+      "Id": "96d26d07-d1e5-4060-86a5-14f89a3dbd76",
+      "Title": "Supercharging Capabilities",
+      "PluralTitle": "Supercharging Capabilities",
+      "Description": "The Model 3's supercharging capabilities allow for rapid charging at Tesla's Supercharger stations. This feature is key to Tesla's strategy to address 'range anxiety' and make long-distance travel practical in an electric vehicle."
+    },
+    {
+      "Id": "08e4686e-2473-4aef-81d2-0d41b02b1072",
+      "Title": "Falcon Wing Doors",
+      "PluralTitle": "Falcon Wing Doors",
+      "Description": "Falcon Wing Doors provide unique and convenient access to the rear seats of Tesla's Model X. These innovative doors open upwards rather than outwards, making it easier to get in and out of the vehicle when parked in tight spaces."
+    },
+    {
+      "Id": "0c75a9e4-6c71-4a9d-b1e9-5fc1185df2e7",
+      "Title": "Largest Panoramic Windshield",
+      "PluralTitle": "Largest Panoramic Windshields",
+      "Description": "Largest Panoramic Windshield offers a wide and immersive view for passengers. The expansive glass design maximizes visibility, provides a greater sense of openness, and enhances the overall driving and riding experience in Tesla vehicles."
+    },
+    {
+      "Id": "a08b8e85-c54c-4f0a-881e-383a2f19c3b7",
+      "Title": "Seven-Passenger Seating",
+      "PluralTitle": "Seven-Passenger Seating",
+      "Description": "Seven-Passenger Seating provides ample space for passengers in the vehicle. This configuration, available in certain Tesla models, provides comfortable accommodation for up to seven individuals, making it a good choice for large families or those who require extra passenger space."
+    },
+    {
+      "Id": "91e5c0a3-9076-4b46-852d-40fbac98d6a9",
+      "Title": "Compact SUV Design",
+      "PluralTitle": "Compact SUV Designs",
+      "Description": "Compact SUV Design offers a combination of compact size and SUV functionality. This feature, exemplified in Tesla's Model Y, delivers the versatility of an SUV in a compact and city-friendly form, making it a practical choice for both city driving and weekend adventures."
+    },
+    {
+      "Id": "d7b8e4f0-9030-43fc-9b43-8abab1663f3d",
+      "Title": "Spacious Interior",
+      "PluralTitle": "Spacious Interiors",
+      "Description": "Spacious Interior provides a comfortable and roomy cabin for passengers. With ample headroom, legroom, and cargo space, Tesla's spacious interior ensures a comfortable ride for both short and long journeys."
+    },
+    {
+      "Id": "c2f4b7b6-431b-4d81-8e89-28c135f5a860",
+      "Title": "Versatile Cargo Space",
+      "PluralTitle": "Versatile Cargo Spaces",
+      "Description": "Versatile Cargo Space allows for flexible storage of items in the vehicle. With foldable rear seats and additional front trunk (or 'frunk') in most models, Tesla vehicles offer a generous and adaptable cargo space to suit a variety of storage needs."
+    },
+    {
+      "Id": "2a59c11e-2a7d-4d8d-8295-9a6fe52ddcac",
+      "Title": "Stainless Steel Exoskeleton",
+      "PluralTitle": "Stainless Steel Exoskeletons",
+      "Description": "Stainless Steel Exoskeleton provides durability and strength to the Cybertruck. This unique and rugged design feature ensures that the vehicle is resistant to dents, damage, and long-term corrosion, while also contributing to the overall safety structure of the vehicle."
+    },
+    {
+      "Id": "8608cb54-08db-494c-a8d5-0c4d3e1e74b7",
+      "Title": "Armor Glass",
+      "PluralTitle": "Armor Glass",
+      "Description": "Armor Glass offers enhanced strength and resistance to damage. Used in Tesla's Cybertruck, this ultra-strong glass is designed to absorb and distribute impact force, offering a high level of protection for passengers within the vehicle."
+    },
+    {
+      "Id": "f29d1e9f-4d6f-4254-bde6-5cc2c63c8fc0",
+      "Title": "Vault Storage",
+      "PluralTitle": "Vault Storages",
+      "Description": "Vault Storage provides secure and spacious storage options in the Cybertruck. This locked storage area adds a layer of security for cargo, and its large capacity is capable of accommodating a variety of items, from luggage to sports equipment and more."
+    },
+    {
+      "Id": "48662a92-3f8a-42f4-a7b9-72f3b70d784e",
+      "Title": "Record-Breaking Acceleration",
+      "PluralTitle": "Record-Breaking Accelerations",
+      "Description": "Record-Breaking Acceleration feature enables the Roadster to achieve exceptional acceleration speeds. With the ability to reach 60 mph in less than 2 seconds, this Tesla sports car offers performance that rivals some of the fastest supercars in the world."
+    },
+    {
+      "Id": "2a69547b-c6eb-4e1d-9d61-8436a7a48df7",
+      "Title": "Convertible Roof",
+      "PluralTitle": "Convertible Roofs",
+      "Description": "Convertible Roof offers the option to open or remove the roof for an open-air driving experience. Available on the Roadster, this feature adds a new dimension of enjoyment, allowing drivers and passengers to fully appreciate their surroundings when weather conditions permit."
+    },
+    {
+      "Id": "d72ed71b-803e-4f08-b1ff-618e9fe6b6f0",
+      "Title": "Maximum Range",
+      "PluralTitle": "Maximum Ranges",
+      "Description": "Maximum Range feature provides the longest driving range on a single charge among Tesla vehicles. This feature, highlighted in the Tesla Roadster and Model S Long Range, provides a solution to 'range anxiety,' making it possible for long-distance trips with fewer stops for recharging."
+    }
+  ],
+  "Lists": [
+
+    {
+      "Id": "3b17f9e2-3801-45b4-8e26-7913645c96b4",
+      "Title": "Tesla Vehicles",
+      "PluralTitle": "Tesla Vehicles",
+      "Description": "Tesla Vehicles represent the range of all-electric cars and trucks manufactured and sold by Tesla Inc. They are a key component of Tesla's efforts to promote the adoption of electric vehicles and contribute to a more sustainable future. Each vehicle in the Tesla lineup offers a unique combination of performance, safety, and utility features without the need for gasoline.",
+      "ParentConceptId": "1c1b4890-7e8a-4f1f-a7e3-5b71e8e303d0",
+      "ConceptIds": null,
+      "PullFromListsIds": null
+    },
+    {
+      "Id": "0a62de7e-72c7-426a-a46b-1db6483a3a4b",
+      "Title": "Tesla Technologies",
+      "PluralTitle": "Tesla Technologies",
+      "Description": "Tesla Technologies refers to the suite of proprietary technologies developed and employed by Tesla Inc. These technologies underline Tesla's competitive advantage in the electric vehicle and renewable energy industries. They are instrumental to Tesla's vision of a future with widespread adoption of electric vehicles and renewable energy.",
+      "ParentConceptId": "1c1b4890-7e8a-4f1f-a7e3-5b71e8e303d0",
+      "ConceptIds": null,
+      "PullFromListsIds": null
+    },
+    {
+      "Id": "725791c6-4ee4-4c64-8475-4d2fe7793075",
+      "Title": "Common Car Features",
+      "PluralTitle": "Common Car Features",
+      "Description": "A list of common features available with all Tesla cars.",
+      "ParentConceptId": "0f496816-b091-4605-b05b-79c1cb9d7c4a",
+      "ConceptIds": null,
+      "PullFromListsIds": null
+    },
+    {
+      "Id": "b8ef4ed7-bb82-4b13-8d03-0a37d6b2b470",
+      "Title": "Model S Features",
+      "PluralTitle": "Model S Features",
+      "Description": "A list of all features available with the Tesla Model S",
+      "ParentConceptId": "71740b3a-20b6-46ee-a179-cf76ac687c5e",
+      "ConceptIds": null,
+      "PullFromListsIds": [
+        "725791c6-4ee4-4c64-8475-4d2fe7793075"
+      ]
+    },
+    {
+      "Id": "d62c05e4-1dd7-4f2b-aa6e-d70e3c9efb55",
+      "Title": "Model 3 Features",
+      "PluralTitle": "Model 3 Features",
+      "Description": "A list of all features available with the Tesla Model 3",
+      "ParentConceptId": "4f731b4d-4142-4df5-bdf1-531e4edf25fb",
+      "ConceptIds": null,
+      "PullFromListsIds": [
+        "725791c6-4ee4-4c64-8475-4d2fe7793075"
+      ]
+    },
+    {
+      "Id": "96e85f4a-3a61-4f39-a12b-398b3b31c4e0",
+      "Title": "Model X Features",
+      "PluralTitle": "Model X Features",
+      "Description": "A list of all features available with the Tesla Model X",
+      "ParentConceptId": "6e7c8a11-251e-4c2b-b0ea-b25ee690ad8f",
+      "ConceptIds": null,
+      "PullFromListsIds": [
+        "725791c6-4ee4-4c64-8475-4d2fe7793075"
+      ]
+    },
+    {
+      "Id": "c196d7e1-08d9-43c2-87eb-4229a7b40f6d",
+      "Title": "Model Y Features",
+      "PluralTitle": "Model Y Features",
+      "Description": "A list of all features available with the Tesla Model Y",
+      "ParentConceptId": "60a4e24a-68c5-4326-ba3d-c5f3f4d2e0ce",
+      "ConceptIds": null,
+      "PullFromListsIds": [
+        "725791c6-4ee4-4c64-8475-4d2fe7793075"
+      ]
+    },
+    {
+      "Id": "f91cb139-ae7b-4154-90a6-c02c7037d8fd",
+      "Title": "Cybertruck Features",
+      "PluralTitle": "Cybertruck Features",
+      "Description": "A list of all features available with the Tesla Cybertruck",
+      "ParentConceptId": "79163f7b-69f6-4d1f-84f2-c8aeb1a18e0a",
+      "ConceptIds": null,
+      "PullFromListsIds": [
+        "725791c6-4ee4-4c64-8475-4d2fe7793075"
+      ]
+    },
+    {
+      "Id": "1e8a8dd5-8e8e-4f35-8030-5b7f44d61fd5",
+      "Title": "Roadster Features",
+      "PluralTitle": "Roadster Features",
+      "Description": "A list of all features available with the Tesla Roadster",
+      "ParentConceptId": "c43d5c5a-2c63-4c7e-a116-ae2bdc823650",
+      "ConceptIds": null,
+      "PullFromListsIds": [
+        "725791c6-4ee4-4c64-8475-4d2fe7793075"
+      ]
+    },
+    {
+      "Id": "7105a233-0a6f-45b4-93c3-3966c00a0f78",
+      "Title": "All Car Features",
+      "PluralTitle": "All Car Features",
+      "Description": "A list of all features available with Tesla Cars",
+      "ParentConceptId": "0f496816-b091-4605-b05b-79c1cb9d7c4a",
+      "ConceptIds": null,
+      "PullFromListsIds": [
+        "b8ef4ed7-bb82-4b13-8d03-0a37d6b2b470",
+        "d62c05e4-1dd7-4f2b-aa6e-d70e3c9efb55",
+        "96e85f4a-3a61-4f39-a12b-398b3b31c4e0",
+        "c196d7e1-08d9-43c2-87eb-4229a7b40f6d",
+        "f91cb139-ae7b-4154-90a6-c02c7037d8fd",
+        "1e8a8dd5-8e8e-4f35-8030-5b7f44d61fd5"
+      ]
+    }
+  ],
+  "Memberships": [
+    {
+      "ConceptId": "71740b3a-20b6-46ee-a179-cf76ac687c5e",
+      "ListId": "3b17f9e2-3801-45b4-8e26-7913645c96b4"
+    },
+    {
+      "ConceptId": "4f731b4d-4142-4df5-bdf1-531e4edf25fb",
+      "ListId": "3b17f9e2-3801-45b4-8e26-7913645c96b4"
+    },
+    {
+      "ConceptId": "6e7c8a11-251e-4c2b-b0ea-b25ee690ad8f",
+      "ListId": "3b17f9e2-3801-45b4-8e26-7913645c96b4"
+    },
+    {
+      "ConceptId": "60a4e24a-68c5-4326-ba3d-c5f3f4d2e0ce",
+      "ListId": "3b17f9e2-3801-45b4-8e26-7913645c96b4"
+    },
+    {
+      "ConceptId": "79163f7b-69f6-4d1f-84f2-c8aeb1a18e0a",
+      "ListId": "3b17f9e2-3801-45b4-8e26-7913645c96b4"
+    },
+    {
+      "ConceptId": "c43d5c5a-2c63-4c7e-a116-ae2bdc823650",
+      "ListId": "3b17f9e2-3801-45b4-8e26-7913645c96b4"
+    },
+    {
+      "ConceptId": "00e144d1-7782-476f-961d-32ed54766f3d",
+      "ListId": "0a62de7e-72c7-426a-a46b-1db6483a3a4b"
+    },
+    {
+      "ConceptId": "3a61e28e-bbbd-45b9-96b3-972a6d367b8f",
+      "ListId": "0a62de7e-72c7-426a-a46b-1db6483a3a4b"
+    },
+    {
+      "ConceptId": "79b5e3c5-5e3d-48b3-939d-f772e6de39e7",
+      "ListId": "0a62de7e-72c7-426a-a46b-1db6483a3a4b"
+    },
+    {
+      "ConceptId": "cdc286af-b4f9-4c4e-9824-0a9e11ef0b85",
+      "ListId": "0a62de7e-72c7-426a-a46b-1db6483a3a4b"
+    },
+    {
+      "ConceptId": "26f1609c-6511-486a-8d29-4e14e8a3610a",
+      "ListId": "0a62de7e-72c7-426a-a46b-1db6483a3a4b"
+    },
+    {
+      "ConceptId": "d6f7250e-8c53-4347-8a3d-2f51a4255b23",
+      "ListId": "0a62de7e-72c7-426a-a46b-1db6483a3a4b"
+    },
+    {
+      "ConceptId": "8ed27ac6-26e9-4c07-b99a-3c57abce56e0",
+      "ListId": "0a62de7e-72c7-426a-a46b-1db6483a3a4b"
+    },
+    {
+      "ConceptId": "01a02139-d110-4ad7-a2d7-ae1a535fde9b",
+      "ListId": "0a62de7e-72c7-426a-a46b-1db6483a3a4b"
+    },
+    {
+      "ConceptId": "78f049da-ae3d-4c18-b57f-99e216b7eaf7",
+      "ListId": "725791c6-4ee4-4c64-8475-4d2fe7793075"
+    },
+    {
+      "ConceptId": "4be05f44-8cbe-405b-b1f5-0ef09a80d997",
+      "ListId": "725791c6-4ee4-4c64-8475-4d2fe7793075"
+    },
+    {
+      "ConceptId": "3b60e8f4-6f80-4b57-8a51-660d84c65e8f",
+      "ListId": "725791c6-4ee4-4c64-8475-4d2fe7793075"
+    },
+    {
+      "ConceptId": "1ff2ff92-3e3b-42f6-8d36-76434c7a6b56",
+      "ListId": "b8ef4ed7-bb82-4b13-8d03-0a37d6b2b470"
+    },
+    {
+      "ConceptId": "b4dcd097-c86c-4ad2-b682-24357710a9c6",
+      "ListId": "b8ef4ed7-bb82-4b13-8d03-0a37d6b2b470"
+    },
+    {
+      "ConceptId": "803b364e-4919-4fbb-8b26-c7ea366c2fd7",
+      "ListId": "b8ef4ed7-bb82-4b13-8d03-0a37d6b2b470"
+    },
+    {
+      "ConceptId": "69fda6c9-bd38-418a-b9ff-4edbbd5da6f1",
+      "ListId": "d62c05e4-1dd7-4f2b-aa6e-d70e3c9efb55"
+    },
+    {
+      "ConceptId": "f29beeb6-6ed3-4e09-8574-8b09c7b5f32a",
+      "ListId": "d62c05e4-1dd7-4f2b-aa6e-d70e3c9efb55"
+    },
+    {
+      "ConceptId": "96d26d07-d1e5-4060-86a5-14f89a3dbd76",
+      "ListId": "d62c05e4-1dd7-4f2b-aa6e-d70e3c9efb55"
+    },
+    {
+      "ConceptId": "08e4686e-2473-4aef-81d2-0d41b02b1072",
+      "ListId": "96e85f4a-3a61-4f39-a12b-398b3b31c4e0"
+    },
+    {
+      "ConceptId": "0c75a9e4-6c71-4a9d-b1e9-5fc1185df2e7",
+      "ListId": "96e85f4a-3a61-4f39-a12b-398b3b31c4e0"
+    },
+    {
+      "ConceptId": "a08b8e85-c54c-4f0a-881e-383a2f19c3b7",
+      "ListId": "96e85f4a-3a61-4f39-a12b-398b3b31c4e0"
+    },
+    {
+      "ConceptId": "91e5c0a3-9076-4b46-852d-40fbac98d6a9",
+      "ListId": "c196d7e1-08d9-43c2-87eb-4229a7b40f6d"
+    },
+    {
+      "ConceptId": "d7b8e4f0-9030-43fc-9b43-8abab1663f3d",
+      "ListId": "c196d7e1-08d9-43c2-87eb-4229a7b40f6d"
+    },
+    {
+      "ConceptId": "c2f4b7b6-431b-4d81-8e89-28c135f5a860",
+      "ListId": "c196d7e1-08d9-43c2-87eb-4229a7b40f6d"
+    },
+    {
+      "ConceptId": "2a59c11e-2a7d-4d8d-8295-9a6fe52ddcac",
+      "ListId": "f91cb139-ae7b-4154-90a6-c02c7037d8fd"
+    },
+    {
+      "ConceptId": "8608cb54-08db-494c-a8d5-0c4d3e1e74b7",
+      "ListId": "f91cb139-ae7b-4154-90a6-c02c7037d8fd"
+    },
+    {
+      "ConceptId": "f29d1e9f-4d6f-4254-bde6-5cc2c63c8fc0",
+      "ListId": "f91cb139-ae7b-4154-90a6-c02c7037d8fd"
+    },
+    {
+      "ConceptId": "48662a92-3f8a-42f4-a7b9-72f3b70d784e",
+      "ListId": "1e8a8dd5-8e8e-4f35-8030-5b7f44d61fd5"
+    },
+    {
+      "ConceptId": "2a69547b-c6eb-4e1d-9d61-8436a7a48df7",
+      "ListId": "1e8a8dd5-8e8e-4f35-8030-5b7f44d61fd5"
+    },
+    {
+      "ConceptId": "d72ed71b-803e-4f08-b1ff-618e9fe6b6f0",
+      "ListId": "1e8a8dd5-8e8e-4f35-8030-5b7f44d61fd5"
+    }
+  ],
+  "ConceptMarkdown": [
+    {
+      "ConceptId": "1c1b4890-7e8a-4f1f-a7e3-5b71e8e303d0",
+      "Markdown": "### The Tesla Knowledge Graph\r\n\r\nWelcome to the **Tesla Knowledge Graph**! This is a relatively small knowledge graph that is used as an example for how a concept can be expanded and represented in GraphHub.\r\n\r\n#### Introduction\r\n\r\nGraphHub, currently in its beta stage, is a versatile tool offering a comprehensive platform for capturing and systematizing information about concepts by categorizing them into coherent lists. Whether you're a user, developer, or enthusiast, this tool is geared to aid you!.\r\n\r\n#### Features\r\n\r\n1. **Knowledge Graph Creation**: The platform facilitates the creation of a dynamic knowledge graph by enabling the addition of concepts and the establishment of connections between various Tesla concepts. It allows the representation of diverse concepts such as art styles, photography techniques, digital art genres, and virtually any concept of your choosing!\r\n\r\n2. **Visual Exploration**: The knowledge graph offers a visually intuitive depiction of the relationships between various Tesla concepts.\r\n\r\n3. **Collaboration and Sharing**: The platform enhances collaboration by allowing you to share your knowledge graph with others. You can invite team members or fellow enthusiasts to contribute their unique insights, annotations, and additions to the graph. This fosters a collaborative ecosystem where ideas can thrive, and knowledge can be collectively constructed.\r\n\r\n4. **Export and Integration**: This tool will soon provide native support for exporting all the information, as well as an API for the tech-savvy among you. The tool is open-source, and the complete graph can be found on GitHub.\r\n\r\n#### Getting Started\r\n\r\nBegin by exploring the lists owned by this concept.\r\n\r\n#### GraphHub Beta\r\n\r\nI'm vigorously working on expanding the functionality to soon enable users to:\r\n1. Search\r\n2. Contribute\r\n3. Administer\/Moderate\r\n\r\nFor ideas or suggestions, feel free to connect with me on [LinkedIn @ Daniel Hai](https:\/\/www.linkedin.com\/in\/daniel-hai\/).\r\n\r\nAlso check out my DevLog which follows the development of GraphHub.\r\n\r\n[![IMAGE ALT TEXT](http:\/\/img.youtube.com\/vi\/JJBO2r0F1Ug\/0.jpg)](http:\/\/www.youtube.com\/watch?v=JJBO2r0F1Ug \"Video Title\")\r\n\r\n### Tesla Graph Taxonomy and Ontology\r\n\r\nThe structure is pretty strait forward with the exception of car features where there is a single common list that inherits some features to all specific car feature lists.\r\n\r\nIn addition to that that is an all features car list that pulls all the features from all car lists.\r\n\r\n#### Hierarchy\r\n\r\n* [Tesla](1c1b4890-7e8a-4f1f-a7e3-5b71e8e303d0)\r\n    * [Tesla Vehicles](3b17f9e2-3801-45b4-8e26-7913645c96b4)\r\n        * [Model S](71740b3a-20b6-46ee-a179-cf76ac687c5e)\r\n            * [Model S Features](b8ef4ed7-bb82-4b13-8d03-0a37d6b2b470)\r\n                * [Extended Range](1ff2ff92-3e3b-42f6-8d36-76434c7a6b56)\r\n                * [Premium Interior](b4dcd097-c86c-4ad2-b682-24357710a9c6)\r\n                * [Advanced Air Filtration](803b364e-4919-4fbb-8b26-c7ea366c2fd7)\r\n                * [Common Car Features](725791c6-4ee4-4c64-8475-4d2fe7793075)\r\n        * [Model 3](4f731b4d-4142-4df5-bdf1-531e4edf25fb)\r\n            * [Model 3 Features](d62c05e4-1dd7-4f2b-aa6e-d70e3c9efb55)\r\n                * [Standard Range Plus](69fda6c9-bd38-418a-b9ff-4edbbd5da6f1)\r\n                * [Autopilot](f29beeb6-6ed3-4e09-8574-8b09c7b5f32a)\r\n                * [Supercharging Capabilities](96d26d07-d1e5-4060-86a5-14f89a3dbd76)\r\n                * [Common Car Features](725791c6-4ee4-4c64-8475-4d2fe7793075)\r\n        * [Model X](6e7c8a11-251e-4c2b-b0ea-b25ee690ad8f)\r\n            * [Model X Features](96e85f4a-3a61-4f39-a12b-398b3b31c4e0)\r\n                * [Falcon Wing Doors](08e4686e-2473-4aef-81d2-0d41b02b1072)\r\n                * [Largest Panoramic Windshield](0c75a9e4-6c71-4a9d-b1e9-5fc1185df2e7)\r\n                * [Seven-Passenger Seating](a08b8e85-c54c-4f0a-881e-383a2f19c3b7)\r\n                * [Common Car Features](725791c6-4ee4-4c64-8475-4d2fe7793075)\r\n        * [Model Y](60a4e24a-68c5-4326-ba3d-c5f3f4d2e0ce)\r\n            * [Model Y Features](c196d7e1-08d9-43c2-87eb-4229a7b40f6d)\r\n                * [Compact SUV Design](91e5c0a3-9076-4b46-852d-40fbac98d6a9)\r\n                * [Spacious Interior](d7b8e4f0-9030-43fc-9b43-8abab1663f3d)\r\n                * [Versatile Cargo Space](c2f4b7b6-431b-4d81-8e89-28c135f5a860)\r\n                * [Common Car Features](725791c6-4ee4-4c64-8475-4d2fe7793075)\r\n        * [Cybertruck](79163f7b-69f6-4d1f-84f2-c8aeb1a18e0a)\r\n            * [Cybertruck Features](f91cb139-ae7b-4154-90a6-c02c7037d8fd)\r\n                * [Stainless Steel Exoskeleton](2a59c11e-2a7d-4d8d-8295-9a6fe52ddcac)\r\n                * [Armor Glass](8608cb54-08db-494c-a8d5-0c4d3e1e74b7)\r\n                * [Vault Storage](f29d1e9f-4d6f-4254-bde6-5cc2c63c8fc0)\r\n                * [Common Car Features](725791c6-4ee4-4c64-8475-4d2fe7793075)\r\n        * [Roadster](c43d5c5a-2c63-4c7e-a116-ae2bdc823650)\r\n            * [Roadster Features](1e8a8dd5-8e8e-4f35-8030-5b7f44d61fd5)\r\n                * [Record-Breaking Acceleration](48662a92-3f8a-42f4-a7b9-72f3b70d784e)\r\n                * [Convertible Roof](2a69547b-c6eb-4e1d-9d61-8436a7a48df7)\r\n                * [Maximum Range](d72ed71b-803e-4f08-b1ff-618e9fe6b6f0)\r\n                * [Common Car Features](725791c6-4ee4-4c64-8475-4d2fe7793075)\r\n* [Tesla Technologies](0a62de7e-72c7-426a-a46b-1db6483a3a4b)\r\n    * [Autopilot](00e144d1-7782-476f-961d-32ed54766f3d)\r\n    * [Full Self-Driving](3a61e28e-bbbd-45b9-96b3-972a6d367b8f)\r\n    * [Supercharger Network](79b5e3c5-5e3d-48b3-939d-f772e6de39e7)\r\n    * [Gigafactory](cdc286af-b4f9-4c4e-9824-0a9e11ef0b85)\r\n    * [Battery Technology](26f1609c-6511-486a-8d29-4e14e8a3610a)\r\n    * [Solar Technology](d6f7250e-8c53-4347-8a3d-2f51a4255b23)\r\n    * [Energy Storage](8ed27ac6-26e9-4c07-b99a-3c57abce56e0)\r\n    * [AI and Machine Learning](01a02139-d110-4ad7-a2d7-ae1a535fde9b)\r\n* Supporting Lists\r\n    * [Common Car Features](725791c6-4ee4-4c64-8475-4d2fe7793075)\r\n        * [Electric Motor](78f049da-ae3d-4c18-b57f-99e216b7eaf7)\r\n        * [Lithium-Ion Battery](4be05f44-8cbe-405b-b1f5-0ef09a80d997)\r\n        * [Touchscreen Display](3b60e8f4-6f80-4b57-8a51-660d84c65e8f)\r\n    * [All Car Features](7105a233-0a6f-45b4-93c3-3966c00a0f78)"
+    }
+  ]
+}
+

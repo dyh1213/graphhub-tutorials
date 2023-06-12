@@ -1,0 +1,40 @@
+﻿@inherits GraphHub.Pages.Concept.ListItemComponentBase
+
+<MudStack Class="hover-lighten" @onclick="() => OnItemCilck()">
+    <MudStack Row="true" Justify="Justify.SpaceBetween" AlignItems="AlignItems.Center">
+        <MudLink Typo="Typo.h6" Color="Color.Default">
+            @ItemTitle
+        </MudLink>
+        <MudStack Row="true" AlignItems="AlignItems.Center"  @onclick:stopPropagation="true">
+            @if (!string.IsNullOrEmpty(TokenItemId))
+            {
+                <MudChip Class="chip" Color="Color.Primary" OnClick="@(() => OnTokenCilck())">
+                    @TokenItemTitle
+                </MudChip>
+            }
+            @if (ItemCount != null)
+            {
+                <MudStack Row="true" AlignItems="AlignItems.Baseline">
+                    <MudText Typo="Typo.body1">@ItemCount</MudText>
+                    <MudText Typo="Typo.body2">Concepts</MudText>
+                </MudStack>
+            }
+        </MudStack>
+    </MudStack>
+    <MudText>@ItemDescription</MudText>
+    <MudDivider />
+</MudStack>
+
+
+<style>
+    .hover-lighten:hover {
+        /* Replace #color with the color you want when hovered. */
+        background-color: #2c2c34;
+        cursor: pointer;
+    }
+
+    .chip:hover {
+        /* Maintain the original background color when the chip is hovered */
+        background-color: inherit;
+    }
+</style>

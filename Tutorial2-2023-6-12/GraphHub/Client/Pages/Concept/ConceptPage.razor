@@ -1,0 +1,103 @@
+﻿@page "/{graphName}/concept/{conceptId}"
+@inherits GraphHub.Pages.Concept.ConceptBase
+@inject NavigationManager _nav
+
+@if (!loaded)
+{
+<MudContainer Style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <MudContainer MaxWidth="MaxWidth.Medium" Class="pa-6 pa-sm-15">
+        <MudText Typo="Typo.h6" Class="mobile-title">Loading ... this will get  much faster after the beta version</MudText>
+    </MudContainer>
+</MudContainer>
+}
+else
+{
+<MudContainer Class="pa-8">
+    <MudGrid>
+        <MudItem xs="12">
+            <MudPaper Class="mud-width-full pa-8" Style="background: linear-gradient(to bottom right, #776be7ff, #373740); background-attachment: fixed; ">
+                <MudStack>
+                    <MudText Typo="Typo.h4" Class="mobile-title">@_concept.Title</MudText>
+                    <MudText Typo="Typo.h6" Class="mobile-text">@_concept.Description</MudText>
+                </MudStack>
+            </MudPaper>
+        </MudItem>
+        <MudItem xs="12" sm="6">
+            <CardComponent Title="Owner of" ItemType="GraphHub.Shared.ItemTypeEnum.List" ItemCount="@(_concept.OwnerOfLists?.Count() ?? 0)" OnClick="@(() => activeIndex = 1)" IsSelected="@(activeIndex == 1)"/>
+        </MudItem>
+
+        <MudItem xs="12" sm="6">
+            <CardComponent Title="Member of" ItemType="GraphHub.Shared.ItemTypeEnum.List" ItemCount="@(_concept.MemberOfLists?.Count() ?? 0)" OnClick="@(() => activeIndex = 2)" IsSelected="@(activeIndex == 2)"/>
+        </MudItem>
+        
+        <MudItem xs="12">
+            <MudTabs Elevation="2" Rounded="true" ApplyEffectsToContainer="true" @bind-ActivePanelIndex="activeIndex">
+                <MudTabPanel Disabled="@(_concept.Markdown == null)" Text="About">
+                    <MudContainer MaxWidth="MaxWidth.False" Class="pa-8">
+                        <MudMarkdown Value="@_concept.Markdown" />
+                    </MudContainer>          
+                </MudTabPanel>
+                <MudTabPanel Text="Owner of">
+                    <MudPaper Class="mud-width-full pa-8">
+                        @if (_concept.OwnerOfLists != null && _concept.OwnerOfLists.Count() > 0)
+                        {
+                        <MudStack>
+                            @foreach (var ownedList in _concept.OwnerOfLists)
+                            {
+                                    <ListItemComponent GraphName="@GraphName"
+                                                       ItemType="GraphHub.Shared.ItemTypeEnum.List"
+                                                       ItemTitle="@ownedList.PluralTitle"
+                                                       ItemId="@ownedList.Id"
+                                                       ItemCount="@(ownedList.NumberOfMembersIncludingInheritence ?? 0)"
+                                                       ItemDescription="@ownedList.Description">
+                                    </ListItemComponent>
+                            }
+                        </MudStack>
+                            }
+                            else
+                            {
+
+                                <MudText Align="Align.Center" Typo="Typo.h6">This list is empty.</MudText>
+                            }
+                    </MudPaper>
+                </MudTabPanel>
+                <MudTabPanel Text="Member of">
+                    <MudPaper Class="mud-width-full pa-8">
+                        @if (_concept.MemberOfLists != null && _concept.MemberOfLists.Count() > 0)
+                            {
+                        <MudStack>
+                            <MudDivider />
+                            @foreach (var memberOfList in _concept.MemberOfLists)
+                            {
+                                <ListItemComponent GraphName="@GraphName"
+                                                   ItemType="GraphHub.Shared.ItemTypeEnum.List"
+                                                   ItemTitle="@memberOfList.PluralTitle"
+                                                   ItemId="@memberOfList.Id"
+                                                   ItemCount="@(memberOfList.NumberOfMembersIncludingInheritence ?? 0)"
+                                                   ItemDescription="@memberOfList.Description">
+                                </ListItemComponent>
+                            }
+                        </MudStack>
+                            }
+                            else
+                            {
+                        <MudText Align="Align.Center" Typo="Typo.h6">This list is empty.</MudText>
+                            }
+                    </MudPaper>
+                </MudTabPanel>
+            </MudTabs>
+        </MudItem>
+
+        <MudItem xs="12">
+            <MudPaper Class="mud-width-full pa-8">
+                <MudStack>
+                    <MudText Typo="Typo.h6">Related Concepts</MudText>
+                    <MudContainer Class="pa-0">
+                        <RelatedConceptsComponent GraphName="@GraphName" />
+                    </MudContainer>
+                </MudStack>
+            </MudPaper>
+        </MudItem>
+    </MudGrid>
+</MudContainer>
+}

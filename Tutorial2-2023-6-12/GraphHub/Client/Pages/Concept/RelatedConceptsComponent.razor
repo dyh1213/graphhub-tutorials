@@ -1,0 +1,17 @@
+﻿@inherits GraphHub.Pages.Concept.RelatedConceptComponentBase
+
+@if (loaded && graphSummary != null)
+{
+    @foreach (var list in graphSummary)
+    {
+        if (!string.IsNullOrEmpty(list.Id))
+        {
+            <MudChip Color="Color.Secondary" OnClick="@(() => goToList(list.Id))">@list.Title</MudChip>
+        }
+        @foreach (var concept in list?.Concepts ?? new List<GraphHub.Shared.MinimalConcept>())
+        {
+            <MudChip Color="Color.Primary" OnClick="@(() => goToConcept(concept.Id))">@concept.Title</MudChip>
+        }
+
+    }
+}

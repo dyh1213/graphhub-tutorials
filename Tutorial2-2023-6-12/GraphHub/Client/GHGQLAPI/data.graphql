@@ -1,0 +1,77 @@
+﻿query GetConceptPage($graphName: String!, $conceptId: String!) {
+  concept(graphName: $graphName, conceptId: $conceptId) {
+    id
+    title
+    description
+    markdown
+    ownerOfLists {
+      id
+      pluralTitle
+      description
+      numberOfMembersIncludingInheritence
+    }
+    memberOfLists {
+      id
+      pluralTitle
+      description
+      parentConceptName
+      parentConceptId
+      numberOfMembersIncludingInheritence
+    }
+  }
+}
+
+query GetListPage($graphName: String!, $listId: String!) {
+  list(graphName: $graphName, listId: $listId) {
+    id
+    pluralTitle
+    description
+    parentConceptName
+    parentConceptId
+    numberOfMembersIncludingInheritence
+    pullFromLists {
+      id
+      pluralTitle
+      description
+      parentConceptName
+      parentConceptId
+      numberOfMembersIncludingInheritence
+    }
+    pushToLists {
+      id
+      pluralTitle
+      description
+      parentConceptName
+      parentConceptId
+      numberOfMembersIncludingInheritence
+    }
+    listConcepts {
+      id
+      title
+      description
+      inheritedFromListId
+      inheritedFromListName
+    }
+  }
+}
+
+query GetAllListMembers($GraphName: String!, $ListId: String!, $Skip: Int, $Take: Int) {
+  allListMembers(graphName: $GraphName, listId: $ListId, skip: $Skip, take: $Take) {
+    id
+    title
+    description
+    inheritedFromListId
+    inheritedFromListName
+  }
+}
+
+query GetRelatedConcepts($GraphName: String!) {
+  relatedConcepts(graphName: $GraphName) {
+    id
+    title
+    concepts {
+      id
+      title
+    }
+  }
+}

@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="7.0.5" />
+    <PackageReference Include="HotChocolate.AspNetCore" Version="13.2.1" />
+    <PackageReference Include="HotChocolate.Data" Version="13.2.1" />
+    <PackageReference Include="HotChocolate.Authorization" Version="13.2.1" />
+    <PackageReference Include="HotChocolate.Data.EntityFramework" Version="13.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Client\GraphHub.Client.csproj" />
+    <ProjectReference Include="..\Shared\GraphHub.Shared.csproj" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Remove="Controllers\" />
+    <None Remove="Utilities\" />
+    <None Remove="GraphQL\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Utilities\" />
+    <Folder Include="GraphQL\" />
+  </ItemGroup>
+</Project>
